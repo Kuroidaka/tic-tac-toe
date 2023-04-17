@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link href="./assets/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet"  href="./css/style.css">
+</head>
+<body>
+    <div class="app">
+
+        <div class="notify" style="display: none">
+            <div class="modal">
+
+                <div class="role">
+                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-o"></i>
+                </div>
+                <div class="title">Win</div>
+
+                <button class="btn">Continue</button>
+            </div>
+        </div>
+
+        <div class="start-game-menu" style="display: none" >
+            <div class="modal">
+                <div class="title">Let Play</div>
+
+                <div class="name">
+                    <label for="user-name" class="user-name-label">Your name</label>
+                    <input type="text" id="user-name" class="user-name">
+                </div>
+
+                <div class="role">
+                    <div class="x-role-wrapper">
+                        <span><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+
+                    <div class="o-role-wrapper">
+                        <span><i class="fa-solid fa-o"></i></span>
+                    </div>
+                </div>
+
+                <div class="play-btn-wrapper">
+                    <button class="play-btn">
+                        PLAY
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="game" >
+            <table>
+                <tbody class="game-content">
+                    <!-- <tr>
+                        <td data-cell = "1">
+                            <span class="cell" style="display: none;">
+                                <i class="fa-solid fa-xmark"></i>
+                                <i class="fa-solid fa-o"></i>
+                            </span>
+                        </td>
+                        <td data-cell = "2">
+                            <span class="cell">
+                                
+                            </span>
+                        </td>
+                        <td data-cell = "3">
+                            <span class="cell"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-cell = "4">
+                            <span class="cell"></span>
+                        </td>
+                        <td data-cell = "5">
+                            <span class="cell"></span>
+                        </td>
+                        <td data-cell = "6">
+                            <span class="cell"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-cell = "7">
+                            <span class="cell"></span>
+                        </td>
+                        <td data-cell = "8">
+                            <span class="cell"></span>
+                        </td>
+                        <td data-cell = "9">
+                            <span class="cell"></span>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="./index.js">
+</script>
+
+</html>

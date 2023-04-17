@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.start-game-menu {
+  width: 500px;
+  height: 700px;
+  background-color: rgb(104, 102, 102);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-game-menu .modal .title {
+  text-align: center;
+  font-size: 85px;
+}
+.start-game-menu .modal .name {
+  display: block;
+}
+.start-game-menu .modal .name input.user-name {
+  margin-top: 10px;
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(61, 61, 61, 0.2392156863);
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: black;
+}
+.start-game-menu .modal .role {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.start-game-menu .modal .role .o-role-wrapper, .start-game-menu .modal .role .x-role-wrapper {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.start-game-menu .modal .role .o-role-wrapper:hover, .start-game-menu .modal .role .x-role-wrapper:hover {
+  opacity: 1;
+}
+.start-game-menu .modal .role .o-role-wrapper {
+  background-color: rgb(77, 139, 234);
+}
+.start-game-menu .modal .role .x-role-wrapper {
+  background-color: rgb(213, 84, 84);
+}
+.start-game-menu .modal .play-btn-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-game-menu .modal .play-btn-wrapper .play-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid;
+  cursor: pointer;
+}
+
+.game {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: rgb(49, 180, 180);
+  padding: 50px;
+}
+.game table {
+  width: 450px;
+  height: 450px;
+  border-color: grey;
+  border-spacing: 14px;
+}
+.game table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+}
+.game table tbody tr, .game table tbody td {
+  border-collapse: separate;
+  border-style: solid;
+}
+.game table tbody tr {
+  background: #fff;
+}
+.game table tbody tr {
+  width: 100%;
+  height: 33%;
+}
+.game table tbody tr td {
+  width: 33%;
+  text-align: center;
+  cursor: pointer;
+}
+.game table tbody tr td .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: rgba(61, 61, 61, 0.2392156863);
+}
+.game table tbody tr td .cell i {
+  position: absolute;
+}
+.game table tbody tr td .cell i[class*=fa-xmark] {
+  color: burlywood;
+  font-size: 60px;
+}
+.game table tbody tr td .cell i[class*=fa-o] {
+  color: #000000;
+  font-size: 54px;
+}
+
+.notify {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.notify .modal {
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+  background-color: #cdc8c8;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.notify .modal .role {
+  font-size: 164px;
+}
+.notify .modal .role i {
+  display: none;
+}
+.notify .modal .role.X i[class*=fa-xmark] {
+  display: block;
+}
+.notify .modal .role.O i[class*=fa-o] {
+  display: block;
+}
+.notify .modal .role i[class*=fa-xmark] {
+  color: burlywood;
+}
+.notify .modal .role i[class*=fa-o] {
+  color: #000000;
+}
+.notify .modal .title {
+  font-size: 48px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: bolder;
+  padding-bottom: 25px;
+}
+.notify .modal .btn {
+  border-radius: 10px;
+  background-color: rgb(11, 105, 105);
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-size: 27px;
+  font-family: "Font Awesome 6 Free";
+  color: white;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+.notify .modal .btn:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */
